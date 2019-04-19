@@ -21,3 +21,4 @@ Each cocktail will display an image, description, ingredients and recipe instruc
     - -DrinkRecipe
 
 https://wireframe.cc/G1kJAW
+<img width="1042" alt="Screen Shot 2019-04-19 at 2 33 40 PM" src="https://user-images.githubusercontent.com/47368206/56440543-b82ced00-62b7-11e9-80d6-3be3ff751025.png">
