@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
-//https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list
-
-class Search extends Component {
+class FaveDrink extends Component {
     render() {
         return (
             <div>
@@ -12,6 +10,4 @@ class Search extends Component {
     }
 }
 
-
-
-export default Search;
+export default FaveDrink;
