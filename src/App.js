@@ -5,46 +5,9 @@ import { Route, Link } from "react-router-dom";
 import Home from "./Components/Home";
 import Alcoholic from "./Components/Alcoholic";
 import NonAlcoholic from "./Components/NonAlcoholic";
+import RandomizeDrink from "./Components/RandomizeDrink";
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      randomDrink: [],
-      fetchOK: null
-    };
-  }
-  componentDidMount() {
-    this.fetchRandomDrink();
-  }
-
-  fetchRandomDrink = () => {
-    return fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php")
-      .then(resp => {
-        if (!resp.ok) {
-          throw Error(resp.statusText);
-        }
-        return resp.json();
-      })
-      .then(data => {
-        this.setState({
-          fetchOK: true,
-          randomDrink: data.drinks
-        });
-        return data.drinks;
-      })
-      .catch(err => {
-        console.log(err.message);
-      });
-  };
-
-  renderFetch() {
-    if (this.state.fetchOK) {
-      return <button onClick={this.fetchRandomDrink}>Hit Me!</button>;
-    } else {
-      return <h1>Mixing Random Drink...</h1>;
-    }
-  }
 
   render() {
     return (
@@ -60,6 +23,9 @@ class App extends Component {
             <li>
               <Link to="/nonalcoholic">Non-Alcoholic</Link>
             </li>
+            <li>
+              <Link to="/randomizedrink">Hit Me!</Link>
+            </li>
           </ul>
         </nav>
         <header>
@@ -69,7 +35,7 @@ class App extends Component {
           <Route exact path="/" render={Home} />
           <Route path="/alcoholic" component={Alcoholic} />
           <Route path="/nonalcoholic" component={NonAlcoholic} />
-          <div>{this.renderFetch()}</div>
+          <Route path="/randomizedrink" component={RandomizeDrink} />
         </main>
       </div>
     );
