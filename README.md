@@ -29,7 +29,7 @@ Each cocktail will display an image, description, ingredients and recipe instruc
 <h4>Main Site</h4>
 https://www.thecocktaildb.com/api.php
 <h4>Implemented APIs</h4>
-https://www.thecocktaildb.com/api/json/v1/1/random.php
-https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic
-https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic
-https://www.thecocktaildb.com/api/json/v1/1/search.php?s=(drink name goes here)<br />
+https://www.thecocktaildb.com/api/json/v1/1/random.php<br />
+https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic<br />
+https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic<br />
+https://www.thecocktaildb.com/api/json/v1/1/search.php?s=DRINK_NAME_GOES_HERE<br />
