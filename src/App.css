@@ -26,7 +26,7 @@ body {
   background-attachment: fixed;
 }
 nav {
-  background-color:rgba(85, 139, 47, 0.7);
+  background-color: rgba(85, 139, 47, 0.8);
   padding: 5px;
   margin: 0 auto;
 }
@@ -43,7 +43,7 @@ a:hover {
 
 li {
   display: inline-flex;
-  font-family: 'Allerta Stencil', sans-serif;
+  font-family: "Allerta Stencil", sans-serif;
 }
 
 ul {
@@ -54,19 +54,24 @@ ul {
 h1 {
   display: flex;
   justify-content: center;
-  font-family: 'Allerta Stencil', sans-serif;
+  font-family: "Allerta Stencil", sans-serif;
   color: #d50000;
   background-color: rgba(232, 245, 233, 0.5);
   font-size: 44px;
-  margin-top: -.5px;
+  margin-top: -0.5px;
 }
 
 h2 {
   display: flex;
   justify-content: center;
-  font-family: 'Allerta Stencil', sans-serif;
+  font-family: "Allerta Stencil", sans-serif;
   color: #ffffff;
   font-size: 30px;
+}
+
+p {
+  text-align: center;
+  font-family: "Allerta Stencil", sans-serif;
 }
 
 .search-bar {
@@ -74,23 +79,57 @@ h2 {
   justify-content: center;
 }
 
-
 img {
   width: 200px;
+  height: 200px;
 }
 
-.non-alco-drinks-list {
+.non-alco-drinks {
+  background-color: rgba(255, 179, 0, 0.5);
+  border-radius: 10px;
+  width: 300px;
+  padding: 15px 5px 5px 5px;
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 10px 0px 0px 420px;
 }
 
-.alco-drinks-list {
+img.non-alco-images {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.alco-drinks {
+  background-color: rgba(255, 179, 0, 0.5);
+  border-radius: 10px;
+  width: 300px;
+  padding: 15px 5px 5px 5px;
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 10px 0px 0px 420px;
+}
+
+img.alco-images {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.random-drink {
+  color: #ffb300;
+  display: flex;
+  background-color: rgba(85, 139, 47, 0.9);
+  padding: 10px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 600px;
+  margin: 10px 0px 0px 420px;
 }
 
 @keyframes App-logo-spin {

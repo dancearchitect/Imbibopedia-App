@@ -25,7 +25,6 @@ class NonAlcoholic extends Component {
           nonAlcoholicDrinks: data.drinks,
           isResolved: true
         });
-        console.log("fetch", this.state.nonAlcoholicDrinks);
       })
       .catch(err => {
         console.log(err.message);
@@ -42,14 +41,14 @@ class NonAlcoholic extends Component {
             return (
               <div className="non-alco-drinks">
                 <li key={drink.idDrink}>{drink.strDrink}</li>
-                <img src={drink.strDrinkThumb} />
+                <img src={drink.strDrinkThumb} className="non-alco-images" alt="cocktail" />
               </div>
             );
           })}
         </div>
       );
     } else {
-      return <h1>Mixing Drinks...</h1>;
+      return <h2>Mixing Drinks...</h2>;
     }
   }
 }

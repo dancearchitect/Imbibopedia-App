@@ -41,14 +41,14 @@ class Alcoholic extends Component {
             return (
               <div className="alco-drinks">
                 <li key={drink.idDrink}>{drink.strDrink}</li>
-                <img src={drink.strDrinkThumb} />
+                <img src={drink.strDrinkThumb} className="alco-images" alt="cocktail" />
               </div>
             );
           })}
         </div>
       );
     } else {
-      return <h1>Mixing Drinks...</h1>;
+      return <h2>Mixing Drinks...</h2>;
     }
   }
 }

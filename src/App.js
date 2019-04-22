@@ -34,7 +34,7 @@ class App extends Component {
           <Route exact path="/" render={Home} />
           <Route path="/alcoholic" component={Alcoholic} />
           <Route path="/nonalcoholic" component={NonAlcoholic} />
-          <Route path="/randomizedrink" component={RandomizeDrink} />
+          <Route path={"/randomizedrink"} component={RandomizeDrink} />
         </main>
       </div>
     );
@@ -42,3 +42,6 @@ class App extends Component {
 }
 
 export default App;
+
+// render={() => {
+//   return (<RandomizeDrink />)
