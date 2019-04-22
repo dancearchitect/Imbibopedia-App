@@ -8,7 +8,6 @@ import NonAlcoholic from "./Components/NonAlcoholic";
 import RandomizeDrink from "./Components/RandomizeDrink";
 
 class App extends Component {
-
   render() {
     return (
       <div>
