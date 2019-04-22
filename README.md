@@ -4,13 +4,16 @@ My app is going to be a cocktail encyclopedia with recipes.<br />
 There will also be a randomize link called **"Hit Me!"** to render a random cocktail.<br />
 
 
+
 <h3>Software:</h3>
 React, JSX, HTML, CSS flex
+
 
 
 <h3>Wireframe</h3>
 https://wireframe.cc/G1kJAW
 <img width="1044" alt="Screen Shot 2019-04-22 at 9 42 40 AM" src="https://user-images.githubusercontent.com/47368206/56503302-0eca3f00-64e3-11e9-9cbb-77c7fc5a734f.png">
+
 
 
 <h3>Components</h3>
@@ -19,7 +22,8 @@ https://wireframe.cc/G1kJAW
 - -RandomizeDrink<br />
 - -Alcoholic<br />
 - -NonAlcoholic<br />
-- -DrinkRecipe
+- -DrinkRecipe<br />
+  - -FaveDrink<br />
 
 <h3>MVP</h3>
 Users will be able to filter by name, alcoholic and non-alcoholic drinks.<br />
