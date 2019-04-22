@@ -1,7 +1,7 @@
 <h1>Imbibopedia</h1>
 
-My app is going to be a cocktail encyclopedia with recipes. 
-There will also be a randomize link called "Hit Me!" to render a random cocktail.
+My app is going to be a cocktail encyclopedia with recipes.<br /> 
+There will also be a randomize link called **"Hit Me!"** to render a random cocktail.<br />
 
 
 <h3>Software:</h3>
