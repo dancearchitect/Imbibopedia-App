@@ -20,7 +20,8 @@ https://wireframe.cc/G1kJAW
 - -RandomizeDrink<br />
 - -Alcoholic<br />
 - -NonAlcoholic<br />
-- -DrinkRecipe
+- -DrinkRecipe<br />
+  - -FaveDrink<br />
 
 <h3>MVP</h3>
 Users will be able to filter by name, alcoholic and non-alcoholic drinks.<br />
