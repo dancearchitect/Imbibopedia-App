@@ -23,7 +23,7 @@ https://wireframe.cc/G1kJAW
 - -DrinkRecipe
 
 <h3>MVP</h3>
-Users will be able to filter by ingredients, name, alcoholic and non-alcoholic drinks.<br />
+Users will be able to filter by name, alcoholic and non-alcoholic drinks.<br />
 Each cocktail will display an image, description, ingredients and recipe instructions.<br />
   
 <h3>APIs:</h3>
