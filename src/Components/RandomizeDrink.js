@@ -45,49 +45,49 @@ class RandomizeDrink extends Component {
           <img src={drink.strDrinkThumb} alt="cocktail" />
           <ul>
             <li>
-              {drink.strMeasure1} {drink.strIngredient1}
+              {drink.strMeasure1} <br /> {drink.strIngredient1}
             </li>
             <li>
-              {drink.strMeasure2} {drink.strIngredient2}
+              {drink.strMeasure2} <br /> {drink.strIngredient2}
             </li>
             <li>
-              {drink.strMeasure3} {drink.strIngredient3}
+              {drink.strMeasure3} <br /> {drink.strIngredient3}
             </li>
             <li>
-              {drink.strMeasure4} {drink.strIngredient4}
+              {drink.strMeasure4} <br /> {drink.strIngredient4}
             </li>
             <li>
-              {drink.strMeasure5} {drink.strIngredient5}
+              {drink.strMeasure5} <br /> {drink.strIngredient5}
             </li>
             <li>
-              {drink.strMeasure6} {drink.strIngredient6}
+              {drink.strMeasure6} <br /> {drink.strIngredient6}
             </li>
             <li>
-              {drink.strMeasure7} {drink.strIngredient7}
+              {drink.strMeasure7} <br /> {drink.strIngredient7}
             </li>
             <li>
-              {drink.strMeasure8} {drink.strIngredient8}
+              {drink.strMeasure8} <br /> {drink.strIngredient8}
             </li>
             <li>
-              {drink.strMeasure9} {drink.strIngredient9}
+              {drink.strMeasure9} <br /> {drink.strIngredient9}
             </li>
             <li>
-              {drink.strMeasure10} {drink.strIngredient10}
+              {drink.strMeasure10} <br /> {drink.strIngredient10}
             </li>
             <li>
-              {drink.strMeasure11} {drink.strIngredient11}
+              {drink.strMeasure11} <br /> {drink.strIngredient11}
             </li>
             <li>
-              {drink.strMeasure12} {drink.strIngredient12}
+              {drink.strMeasure12} <br /> {drink.strIngredient12}
             </li>
             <li>
-              {drink.strMeasure13} {drink.strIngredient13}
+              {drink.strMeasure13} <br /> {drink.strIngredient13}
             </li>
             <li>
-              {drink.strMeasure14} {drink.strIngredient14}
+              {drink.strMeasure14} <br /> {drink.strIngredient14}
             </li>
             <li>
-              {drink.strMeasure15} {drink.strIngredient15}
+              {drink.strMeasure15} <br /> {drink.strIngredient15}
             </li>
           </ul>
           <p>{drink.strInstructions}</p>
@@ -106,7 +106,7 @@ class RandomizeDrink extends Component {
 
     return (
       <div>
-        <button onClick={this.randomDrinkGenerator}>Hit me again!</button>
+        <button className="random-button" onClick={this.randomDrinkGenerator}>Hit me again!</button>
         <div>{checkFetch}</div>
       </div>
     );

@@ -13,16 +13,16 @@ class App extends Component {
       <div>
         <nav>
           <ul>
-            <li>
+            <li className="app-nav">
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li className="app-nav">
               <Link to="/alcoholic">Alcoholic</Link>
             </li>
-            <li>
+            <li className="app-nav">
               <Link to="/nonalcoholic">Non-Alcoholic</Link>
             </li>
-            <li>
+            <li className="app-nav">
               <Link to="/randomizedrink">Hit Me!</Link>
             </li>
           </ul>
@@ -31,7 +31,7 @@ class App extends Component {
           <h1>Imbibopedia</h1>
         </header>
         <main>
-          <Route exact path="/" render={Home} />
+          <Route exact path="/" component={Home} />
           <Route path="/alcoholic" component={Alcoholic} />
           <Route path="/nonalcoholic" component={NonAlcoholic} />
           <Route path={"/randomizedrink"} component={RandomizeDrink} />

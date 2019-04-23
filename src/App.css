@@ -41,9 +41,15 @@ a:hover {
   text-decoration: underline;
 }
 
+li.app-nav {
+  display: inline-flex;
+  font-family: "Allerta Stencil", sans-serif;
+}
+
 li {
   display: inline-flex;
   font-family: "Allerta Stencil", sans-serif;
+  font-size: 16px;
 }
 
 ul {
@@ -72,11 +78,18 @@ h2 {
 p {
   text-align: center;
   font-family: "Allerta Stencil", sans-serif;
+  font-size: 22px;
 }
 
 .search-bar {
   display: flex;
   justify-content: center;
+}
+
+button.back-button {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 img {
@@ -140,7 +153,7 @@ img.alco-images {
 .random-drink {
   color: #ffb300;
   display: flex;
-  background-color: rgba(85, 139, 47, 0.9);
+  background-color: rgba(213, 0, 0, 0.7);
   padding: 10px;
   border-radius: 10px;
   flex-wrap: wrap;
