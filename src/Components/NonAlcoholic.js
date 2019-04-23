@@ -15,7 +15,7 @@ class NonAlcoholic extends Component {
 
   componentDidMount() {
     let nonAlcoArray =
-      "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic";
+      "https://www.thecocktaildb.com/api/json/v2/8673533/filter.php?a=Non_Alcoholic";
     fetch(nonAlcoArray)
       .then(resp => {
         return resp.json();
@@ -34,9 +34,10 @@ class NonAlcoholic extends Component {
   render() {
     if (this.state.isResolved === true) {
       return (
-        <div className="non-alco-drinks-list">
+        <div>
           <h2>Non-Alcoholic Drinks</h2>
           <Search />
+          <div className="non-alco-drinks-list">
           {this.state.nonAlcoholicDrinks.map(drink => {
             return (
               <div className="non-alco-drinks">
@@ -45,6 +46,7 @@ class NonAlcoholic extends Component {
               </div>
             );
           })}
+          </div>
         </div>
       );
     } else {

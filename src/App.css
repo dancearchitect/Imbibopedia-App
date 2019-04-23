@@ -84,16 +84,24 @@ img {
   height: 200px;
 }
 
+.non-alco-drinks-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 10px 0px 0px 80px;
+}
+
 .non-alco-drinks {
   background-color: rgba(255, 179, 0, 0.5);
   border-radius: 10px;
   width: 300px;
   padding: 15px 5px 5px 5px;
+  margin: 5px 5px 10px 0px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 10px 0px 0px 420px;
+  align-content: center;
 }
 
 img.non-alco-images {
@@ -102,22 +110,31 @@ img.non-alco-images {
   border-radius: 10px;
 }
 
+.alco-drinks-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 10px 0px 0px 80px;
+}
+
 .alco-drinks {
   background-color: rgba(255, 179, 0, 0.5);
   border-radius: 10px;
   width: 300px;
   padding: 15px 5px 5px 5px;
+  margin: 5px 5px 10px 0px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 10px 0px 0px 420px;
+  align-content: center;
 }
 
 img.alco-images {
   width: 200px;
   height: 200px;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
 .random-drink {

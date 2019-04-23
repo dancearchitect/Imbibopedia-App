@@ -6,6 +6,7 @@ function Home() {
     <div>
       <h2>Welcome to Imbibopedia!</h2>
       <Search />
+      
     </div>
   );
 }

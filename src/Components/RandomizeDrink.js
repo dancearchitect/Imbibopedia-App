@@ -13,7 +13,7 @@ class RandomizeDrink extends Component {
 
   randomDrinkGenerator = () => {
     const randomDrinkFetch =
-    "https://www.thecocktaildb.com/api/json/v1/1/random.php";
+      "https://www.thecocktaildb.com/api/json/v2/8673533/random.php";
 
     fetch(randomDrinkFetch)
       .then(resp => {
@@ -31,6 +31,10 @@ class RandomizeDrink extends Component {
       .catch(err => {
         console.log(err.message);
       });
+  };
+
+  componentDidMount() {
+    this.randomDrinkGenerator();
   }
 
   showDrinks = () => {
@@ -90,16 +94,20 @@ class RandomizeDrink extends Component {
         </div>
       );
     });
-  }
+  };
 
   render() {
-    const checkFetch = this.state.isResolved ? this.showDrinks() : <h2>Mixing Drink...</h2>
-    
+    const checkFetch =
+      this.state.isResolved ? (
+        this.showDrinks()
+      ) : (
+        <h2>Mixing Drink...</h2>
+      );
+
     return (
       <div>
         <button onClick={this.randomDrinkGenerator}>Hit me again!</button>
-        {console.log(this.randomDrinkGenerator)}
-        <div>{ checkFetch }</div>
+        <div>{checkFetch}</div>
       </div>
     );
   }
