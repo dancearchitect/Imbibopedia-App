@@ -12,7 +12,8 @@ React, JSX, HTML, CSS flex
 
 <h3>Wireframe</h3>
 https://wireframe.cc/G1kJAW
-<img width="1044" alt="Screen Shot 2019-04-22 at 9 42 40 AM" src="https://user-images.githubusercontent.com/47368206/56503302-0eca3f00-64e3-11e9-9cbb-77c7fc5a734f.png">
+<img width="1026" alt="Screen Shot 2019-04-24 at 5 51 21 PM" src="https://user-images.githubusercontent.com/47368206/56696380-9e294b00-66b9-11e9-9128-8a1e839a6f44.png">
+
 
 
 
