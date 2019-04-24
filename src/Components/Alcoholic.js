@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import DrinkRecipe from "./DrinkRecipe";
 
-//https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic
-
 class Alcoholic extends Component {
   constructor(props) {
     super(props);
@@ -25,7 +23,6 @@ class Alcoholic extends Component {
           alcoholicDrinks: data.drinks,
           isResolved: true
         });
-        console.log(this.state.alcoholicDrinks);
       })
       .catch(err => {
         console.log(err.message);
@@ -35,7 +32,7 @@ class Alcoholic extends Component {
   handleClick = evt => {
     evt.stopPropagation();
     fetch(
-      `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${
+      `https://www.thecocktaildb.com/api/json/v2/8673533/lookup.php?i=${
         evt.target.id
       }`
     )
@@ -46,10 +43,6 @@ class Alcoholic extends Component {
         this.setState({
           selectedDrink: data.drinks
         });
-        console.log("hello");
-      })
-      .catch(err => {
-        console.log(err.message);
       });
   };
 
@@ -62,10 +55,12 @@ class Alcoholic extends Component {
   render() {
     if (this.state.isResolved === true) {
       if (this.state.selectedDrink.length > 0) {
-        return <DrinkRecipe 
-        selectedDrink={this.state.selectedDrink} 
-        handleBack={this.handleBack}
-        />;
+        return (
+          <DrinkRecipe
+            selectedDrink={this.state.selectedDrink}
+            handleBack={this.handleBack}
+          />
+        );
       }
       return (
         <div>
@@ -84,7 +79,7 @@ class Alcoholic extends Component {
                     key={drink.idDrink}
                   >
                     {drink.strDrink}
-                    <br />
+                    
                   </li>
                   <img
                     id={drink.idDrink}

@@ -4,20 +4,6 @@
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 body {
   background-image: url(https://images.pexels.com/photos/4784/alcohol-bar-party-cocktail.jpg?cs=srgb&dl=alcohol-bar-beverage-4784.jpg&fm=jpg);
@@ -49,7 +35,9 @@ li.app-nav {
 li {
   display: inline-flex;
   font-family: "Allerta Stencil", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
+  margin-bottom: 5px;
+  width: 120px;
 }
 
 ul {
@@ -78,18 +66,40 @@ h2 {
 p {
   text-align: center;
   font-family: "Allerta Stencil", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
+  width: 600px;
+  margin-top: 100px;
 }
 
-.search-bar {
-  display: flex;
-  justify-content: center;
+.back-button {
+  text-align: center;
+  width: 80px;
+  border: none;
+  background-color: rgba(76, 137, 250, 0.7);
 }
 
 button.back-button {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 18px;
+}
+
+.back-button-container {
+  text-align: center;
+}
+
+.random-button-container {
+  text-align: center;
+}
+
+.random-button {
+  width: 80px;
+  border: none;
+  background-color: rgba(76, 137, 250, 0.7);
+}
+
+button.random-button {
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 18px;
 }
 
 img {
@@ -101,59 +111,60 @@ img {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 10px 0px 0px 80px;
+  margin: 10px 0px 0px 160px;
 }
 
 .non-alco-drinks {
   background-color: rgba(255, 179, 0, 0.5);
   border-radius: 10px;
-  width: 300px;
+  width: 260px;
   padding: 15px 5px 5px 5px;
   margin: 5px 5px 10px 0px;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
 }
 
 img.non-alco-images {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 .alco-drinks-list {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 10px 0px 0px 80px;
+  margin: 10px 0px 0px 160px;
 }
 
 .alco-drinks {
   background-color: rgba(255, 179, 0, 0.5);
   border-radius: 10px;
-  width: 300px;
+  width: 260px;
   padding: 15px 5px 5px 5px;
   margin: 5px 5px 10px 0px;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
 }
 
 img.alco-images {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .random-drink {
   color: #ffb300;
   display: flex;
-  background-color: rgba(213, 0, 0, 0.7);
+  background-color: rgba(213, 0, 0, 0.8);
   padding: 10px;
   border-radius: 10px;
   flex-wrap: wrap;
@@ -162,11 +173,75 @@ img.alco-images {
   margin: 10px 0px 0px 420px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul.random-ingredient-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: -200px;
+}
+
+ul.random-ingredient-list li {
+  margin-left: 200px;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.random-drink li {
+  font-size: 16px;
+}
+
+ul.drink-recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: -200px;
+}
+
+ul.drink-recipe-list li {
+  margin-left: 200px;
+  font-size: 16px;
+}
+
+.drink-recipe li {
+  font-size: 16px;
+}
+
+.drink-recipe {
+  color: #ffb300;
+  display: flex;
+  background-color: rgba(213, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 600px;
+  margin: 10px 0px 0px 420px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+input {
+  margin-left: 640px;
+  border: none;
+  padding: 6px;
+  width: 150px;
+  margin-bottom: 5px;
+  background-color: rgba(76, 137, 250, 0.7);
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #ffb300;
 }

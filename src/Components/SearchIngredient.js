@@ -1,33 +1,46 @@
 import React, { Component } from "react";
 import DrinkRecipe from "./DrinkRecipe";
 
-class NonAlcoholic extends Component {
+class SearchIngredient extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      nonAlcoholicDrinks: [],
-      isResolved: null,
+      query: "",
+      filteredIngredients: [],
       selectedDrink: []
     };
   }
 
-  componentDidMount() {
-    let nonAlcoArray =
-      "https://www.thecocktaildb.com/api/json/v2/8673533/filter.php?a=Non_Alcoholic";
-    fetch(nonAlcoArray)
+  searchIngredient = evt => {
+    this.setState({
+      query: evt.target.value
+    });
+  };
+
+  submitIngredient = evt => {
+    evt.preventDefault();
+    fetch(
+      `https://www.thecocktaildb.com/api/json/v2/8673533/filter.php?i=${
+        this.state.query
+      }`
+    )
       .then(resp => {
+        console.log(resp);
+        if (!resp.ok) {
+          throw Error(resp.statusText);
+        }
         return resp.json();
       })
       .then(data => {
         this.setState({
-          nonAlcoholicDrinks: data.drinks,
-          isResolved: true
+          filteredIngredients: data.drinks
         });
       })
       .catch(err => {
         console.log(err.message);
       });
-  }
+  };
+
   handleClick = evt => {
     evt.stopPropagation();
     fetch(
@@ -52,7 +65,7 @@ class NonAlcoholic extends Component {
   };
 
   render() {
-    if (this.state.isResolved === true) {
+    if (this.state.filteredIngredients.length > 0) {
       if (this.state.selectedDrink.length > 0) {
         return (
           <DrinkRecipe
@@ -63,9 +76,17 @@ class NonAlcoholic extends Component {
       }
       return (
         <div>
-          <h2>Non-Alcoholic Drinks</h2>
+          <div className="search-bar">
+            <form onSubmit={this.submitIngredient}>
+              <input
+                type="text"
+                placeholder="Vodka,lemon,club soda"
+                onChange={this.searchIngredient}
+              />
+            </form>
+          </div>
           <div className="non-alco-drinks-list">
-            {this.state.nonAlcoholicDrinks.map(drink => {
+            {this.state.filteredIngredients.map(drink => {
               return (
                 <div
                   className="non-alco-drinks"
@@ -92,10 +113,19 @@ class NonAlcoholic extends Component {
           </div>
         </div>
       );
-    } else {
-      return <h2>Mixing Drinks...</h2>;
     }
+    return (
+      <div className="search-bar">
+        <form onSubmit={this.submitIngredient}>
+          <input
+            type="text"
+            placeholder="vodka,kahlua,oreo cookie"
+            onChange={this.searchIngredient}
+          />
+        </form>
+      </div>
+    );
   }
 }
 
-export default NonAlcoholic;
+export default SearchIngredient;
