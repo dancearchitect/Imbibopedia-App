@@ -79,7 +79,6 @@ class Alcoholic extends Component {
                     key={drink.idDrink}
                   >
                     {drink.strDrink}
-                    
                   </li>
                   <img
                     id={drink.idDrink}

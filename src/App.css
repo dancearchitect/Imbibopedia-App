@@ -4,7 +4,6 @@
   text-align: center;
 }
 
-
 body {
   background-image: url(https://images.pexels.com/photos/4784/alcohol-bar-party-cocktail.jpg?cs=srgb&dl=alcohol-bar-beverage-4784.jpg&fm=jpg);
   background-size: 1500px;
@@ -21,6 +20,8 @@ a {
   text-decoration: none;
   color: #ffb300;
   font-size: 18px;
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 16px;
 }
 
 a:hover {
@@ -30,6 +31,7 @@ a:hover {
 li.app-nav {
   display: inline-flex;
   font-family: "Allerta Stencil", sans-serif;
+  font-size: 16px;
 }
 
 li {
@@ -230,6 +232,7 @@ input {
   border: none;
   padding: 6px;
   width: 150px;
+  height: 30px;
   margin-bottom: 5px;
   background-color: rgba(76, 137, 250, 0.7);
 }
@@ -244,4 +247,5 @@ button:focus {
 
 input::placeholder {
   color: #ffb300;
+  font-family: "Allerta Stencil", sans-serif;
 }

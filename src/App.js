@@ -13,7 +13,7 @@ class App extends Component {
       <div>
         <nav>
           <ul>
-            <li className="app-nav">
+            <li>
               <Link to="/">Home</Link>
             </li>
             <li className="app-nav">
