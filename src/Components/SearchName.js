@@ -50,11 +50,10 @@ class SearchName extends Component {
           <form onSubmit={this.submitDrink}>
             <input
               type="text"
-              placeholder="Martini? Daiquiri? Sunrise?"
+              placeholder="martini? daiquiri? sunrise?"
               onChange={this.searchDrink}
             />
           </form>
-          <SearchIngredient />
         </div>
       );
     } else {
@@ -64,11 +63,10 @@ class SearchName extends Component {
             <form onSubmit={this.submitDrink}>
               <input
                 type="text"
-                placeholder="Martini? Daiquiri? Sunrise?"
+                placeholder="martini? daiquiri? sunrise?"
                 onChange={this.searchDrink}
               />
             </form>
-            <SearchIngredient />
           </div>
           <DrinkRecipe
             selectedDrink={this.state.filteredDrinks}

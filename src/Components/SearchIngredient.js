@@ -80,7 +80,7 @@ class SearchIngredient extends Component {
             <form onSubmit={this.submitIngredient}>
               <input
                 type="text"
-                placeholder="Vodka,lemon,club soda"
+                placeholder="vodka,kahlua,oreo cookie"
                 onChange={this.searchIngredient}
               />
             </form>

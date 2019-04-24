@@ -28,12 +28,6 @@ a:hover {
   text-decoration: underline;
 }
 
-li.app-nav {
-  display: inline-flex;
-  font-family: "Allerta Stencil", sans-serif;
-  font-size: 16px;
-}
-
 li {
   display: inline-flex;
   font-family: "Allerta Stencil", sans-serif;
@@ -187,10 +181,12 @@ ul.random-ingredient-list li {
   font-size: 16px;
   display: flex;
   flex-wrap: wrap;
+  width: 350px;
 }
 
 .random-drink li {
   font-size: 16px;
+  width: 300px;
 }
 
 ul.drink-recipe-list {
@@ -203,10 +199,12 @@ ul.drink-recipe-list {
 ul.drink-recipe-list li {
   margin-left: 200px;
   font-size: 16px;
+  width: 350px;
 }
 
 .drink-recipe li {
   font-size: 16px;
+  width: 230px;
 }
 
 .drink-recipe {
