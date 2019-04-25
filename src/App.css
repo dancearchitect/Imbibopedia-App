@@ -125,7 +125,7 @@ img.drink-images {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  cursor: pointer;
+  cursor: crosshair;
 }
 
 .non-alco-drinks:hover {
@@ -150,7 +150,7 @@ img.drink-images {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  cursor: pointer;
+  cursor: crosshair;
 }
 
 .alco-drinks:hover {
@@ -175,7 +175,7 @@ img.drink-images {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  cursor: pointer;
+  cursor: crosshair;
 }
 
 .search-ingred-drinks:hover {
