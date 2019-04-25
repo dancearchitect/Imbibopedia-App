@@ -101,8 +101,8 @@ button.random-button {
 }
 
 img.drink-images {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 10px;
   margin-top: 10px;
 }
@@ -117,7 +117,7 @@ img.drink-images {
 .non-alco-drinks {
   background-color: rgba(76, 137, 250, 0.5);
   border-radius: 10px;
-  width: 260px;
+  width: 270px;
   padding: 15px 5px 5px 5px;
   margin: 5px 5px 10px 0px;
   display: flex;
@@ -128,8 +128,12 @@ img.drink-images {
   cursor: crosshair;
 }
 
+.non-alco-drinks li {
+  font-size: 14px;
+}
+
 .non-alco-drinks:hover {
-  background-color: rgba(193, 88, 220, 0.5)
+  background-color: rgba(193, 88, 220, 0.5);
 }
 
 .alco-drinks-list {
@@ -140,9 +144,9 @@ img.drink-images {
 }
 
 .alco-drinks {
-  background-color: rgba(255, 179, 0, 0.5);
+  background-color: rgba(255, 179, 0, 0.6);
   border-radius: 10px;
-  width: 260px;
+  width: 270px;
   padding: 15px 5px 5px 5px;
   margin: 5px 5px 10px 0px;
   display: flex;
@@ -153,8 +157,12 @@ img.drink-images {
   cursor: crosshair;
 }
 
+.alco-drinks li {
+  font-size: 14px;
+}
+
 .alco-drinks:hover {
-  background-color: rgba(255, 96, 144, 0.5)
+  background-color: rgba(255, 96, 144, 0.5);
 }
 
 .search-ingred-drinks-list {
@@ -167,7 +175,7 @@ img.drink-images {
 .search-ingred-drinks {
   background-color: rgba(232, 245, 233, 0.5);
   border-radius: 10px;
-  width: 260px;
+  width: 270px;
   padding: 15px 5px 5px 5px;
   margin: 5px 5px 10px 0px;
   display: flex;
@@ -178,8 +186,12 @@ img.drink-images {
   cursor: crosshair;
 }
 
+.search-ingred-drinks li {
+  font-size: 14px;
+}
+
 .search-ingred-drinks:hover {
-  background-color: rgba(105, 224, 176, 0.5)
+  background-color: rgba(105, 224, 176, 0.5);
 }
 
 .random-drink {
@@ -263,7 +275,7 @@ input {
   width: 200px;
   height: 20px;
   margin-bottom: 5px;
-  background-color: rgba(76, 137, 250, 0.8);
+  background-color: rgba(76, 137, 250, 0.85);
 }
 
 input:focus {
@@ -292,9 +304,9 @@ input::placeholder {
 }
 
 .drink-name-recipe {
-  color: #ffb300;
+  color: #283593;
   display: flex;
-  background-color: rgba(224, 89, 44, 0.8);
+  background-color: rgba(255, 179, 0, 0.8);
   padding: 10px;
   border-radius: 10px;
   flex-wrap: wrap;
