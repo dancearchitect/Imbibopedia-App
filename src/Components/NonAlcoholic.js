@@ -83,7 +83,7 @@ class NonAlcoholic extends Component {
                     src={drink.strDrinkThumb}
                     id={drink.idDrink}
                     onClick={this.handlClick}
-                    className="non-alco-images"
+                    className="drink-images"
                     alt="cocktail"
                   />
                 </div>

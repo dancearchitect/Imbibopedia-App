@@ -84,7 +84,7 @@ class Alcoholic extends Component {
                     id={drink.idDrink}
                     onClick={this.handleClick}
                     src={drink.strDrinkThumb}
-                    className="alco-images"
+                    className="drink-images"
                     alt="cocktail"
                   />
                 </div>

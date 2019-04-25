@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import DrinkRecipe from "./DrinkRecipe";
+import DrinkIngredSearchResults from "./DrinkIngredSearchResults";
 
 class SearchIngredient extends Component {
   constructor(props) {
@@ -64,11 +65,17 @@ class SearchIngredient extends Component {
     });
   };
 
+  handleClear = () => {
+    this.setState({
+      filteredIngredients: []
+    });
+  };
+
   render() {
     if (this.state.filteredIngredients.length > 0) {
       if (this.state.selectedDrink.length > 0) {
         return (
-          <DrinkRecipe
+          <DrinkIngredSearchResults
             selectedDrink={this.state.selectedDrink}
             handleBack={this.handleBack}
           />
@@ -76,20 +83,20 @@ class SearchIngredient extends Component {
       }
       return (
         <div>
-          <div className="search-bar">
+          <div className="search-bar-ingred">
             <form onSubmit={this.submitIngredient}>
               <input
                 type="text"
-                placeholder="vodka,kahlua,oreo cookie"
+                placeholder="vodka,kahlua,vanilla ice-cream"
                 onChange={this.searchIngredient}
               />
             </form>
           </div>
-          <div className="non-alco-drinks-list">
+          <div className="search-ingred-drinks-list">
             {this.state.filteredIngredients.map(drink => {
               return (
                 <div
-                  className="non-alco-drinks"
+                  className="search-ingred-drinks"
                   onClick={this.handleClick}
                   id={drink.idDrink}
                 >
@@ -104,7 +111,7 @@ class SearchIngredient extends Component {
                     src={drink.strDrinkThumb}
                     id={drink.idDrink}
                     onClick={this.handlClick}
-                    className="non-alco-images"
+                    className="drink-images"
                     alt="cocktail"
                   />
                 </div>
@@ -119,7 +126,7 @@ class SearchIngredient extends Component {
         <form onSubmit={this.submitIngredient}>
           <input
             type="text"
-            placeholder="vodka,kahlua,oreo cookie"
+            placeholder="vodka,kahlua,vanilla ice-cream"
             onChange={this.searchIngredient}
           />
         </form>

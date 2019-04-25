@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import DrinkRecipe from "./DrinkRecipe";
-import SearchIngredient from "./SearchIngredient";
+import DrinkNameSearchResults from "./DrinkNameSearchResults";
 
 class SearchName extends Component {
   constructor(props) {
@@ -58,7 +57,7 @@ class SearchName extends Component {
       );
     } else {
       return (
-        <div>
+        <div className="drink-name-recipes">
           <div className="search-bar">
             <form onSubmit={this.submitDrink}>
               <input
@@ -68,7 +67,7 @@ class SearchName extends Component {
               />
             </form>
           </div>
-          <DrinkRecipe
+          <DrinkNameSearchResults
             selectedDrink={this.state.filteredDrinks}
             handleBack={this.handleBack}
           />

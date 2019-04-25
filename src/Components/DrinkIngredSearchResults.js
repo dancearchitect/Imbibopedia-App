@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 
-class DrinkRecipe extends Component {
+class DrinkIngredSearchResults extends Component {
   showRecipe = () => {
     if (this.props.selectedDrink != null) {
       return this.props.selectedDrink.map(drink => {
         return (
-          <div className="drink-recipe">
+          <div className="drink-ingred-recipe">
             <li key={drink.idDrink}>{drink.strDrink}</li>
             <img
               src={drink.strDrinkThumb}
               alt="cocktail"
               className="drink-images"
             />
-            <ul className="drink-recipe-list">
+            <ul className="drink-ingred-recipe-list">
               <li>
                 {drink.strMeasure1} {drink.strIngredient1}
               </li>
@@ -80,4 +80,4 @@ class DrinkRecipe extends Component {
   }
 }
 
-export default DrinkRecipe;
+export default DrinkIngredSearchResults;

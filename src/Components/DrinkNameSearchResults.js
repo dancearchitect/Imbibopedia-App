@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 
-class DrinkRecipe extends Component {
+class DrinkNameSearchResults extends Component {
   showRecipe = () => {
     if (this.props.selectedDrink != null) {
       return this.props.selectedDrink.map(drink => {
         return (
-          <div className="drink-recipe">
+          <div className="drink-name-recipe">
             <li key={drink.idDrink}>{drink.strDrink}</li>
             <img
               src={drink.strDrinkThumb}
               alt="cocktail"
               className="drink-images"
             />
-            <ul className="drink-recipe-list">
+            <ul className="drink-name-recipe-list">
               <li>
                 {drink.strMeasure1} {drink.strIngredient1}
               </li>
@@ -69,15 +69,10 @@ class DrinkRecipe extends Component {
   render() {
     return (
       <div>
-        <div className="back-button-container">
-          <button className="back-button" onClick={this.props.handleBack}>
-            Go Back!
-          </button>
-        </div>
         {this.showRecipe()}
       </div>
     );
   }
 }
 
-export default DrinkRecipe;
+export default DrinkNameSearchResults;

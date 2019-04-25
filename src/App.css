@@ -6,7 +6,7 @@
 
 body {
   background-image: url(https://images.pexels.com/photos/4784/alcohol-bar-party-cocktail.jpg?cs=srgb&dl=alcohol-bar-beverage-4784.jpg&fm=jpg);
-  background-size: 1500px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -71,6 +71,7 @@ p {
   text-align: center;
   width: 80px;
   border: none;
+  border-radius: 10px;
   background-color: rgba(76, 137, 250, 0.7);
 }
 
@@ -90,6 +91,7 @@ button.back-button {
 .random-button {
   width: 80px;
   border: none;
+  border-radius: 10px;
   background-color: rgba(76, 137, 250, 0.7);
 }
 
@@ -98,9 +100,11 @@ button.random-button {
   font-size: 18px;
 }
 
-img {
-  width: 200px;
-  height: 200px;
+img.drink-images {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .non-alco-drinks-list {
@@ -111,7 +115,7 @@ img {
 }
 
 .non-alco-drinks {
-  background-color: rgba(255, 179, 0, 0.5);
+  background-color: rgba(76, 137, 250, 0.5);
   border-radius: 10px;
   width: 260px;
   padding: 15px 5px 5px 5px;
@@ -121,13 +125,6 @@ img {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-}
-
-img.non-alco-images {
-  width: 180px;
-  height: 180px;
-  border-radius: 10px;
-  margin-top: 10px;
 }
 
 .alco-drinks-list {
@@ -150,11 +147,24 @@ img.non-alco-images {
   align-content: center;
 }
 
-img.alco-images {
-  width: 180px;
-  height: 180px;
+.search-ingred-drinks-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 700px;
+}
+
+.search-ingred-drinks {
+  background-color: rgba(232, 245, 233, 0.5);
   border-radius: 10px;
-  margin-top: 10px;
+  width: 260px;
+  padding: 15px 5px 5px 5px;
+  margin: 5px 5px 10px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .random-drink {
@@ -225,12 +235,18 @@ ul.drink-recipe-list li {
   flex-wrap: wrap;
 }
 
+.search-bar-ingred {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 input {
-  margin-left: 640px;
   border: none;
   padding: 6px;
-  width: 150px;
-  height: 30px;
+  width: 200px;
+  height: 20px;
   margin-bottom: 5px;
   background-color: rgba(76, 137, 250, 0.7);
 }
@@ -245,5 +261,85 @@ button:focus {
 
 input::placeholder {
   color: #ffb300;
+  font-size: 10px;
   font-family: "Allerta Stencil", sans-serif;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.drink-name-recipes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 70px;
+}
+
+.drink-name-recipe {
+  color: #ffb300;
+  display: flex;
+  background-color: rgba(213, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  margin-bottom: 5px;
+}
+
+.drink-name-recipe-list {
+  display: flex;
+  align-items: flex-start;
+}
+
+.drink-name-recipe li {
+  font-size: 16px;
+  width: 230px;
+}
+
+ul.drink-name-recipe-list li {
+  margin-left: 200px;
+  font-size: 16px;
+  width: 350px;
+}
+
+ul.drink-name-recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: -200px;
+}
+
+ul.drink-ingred-recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: -200px;
+}
+
+ul.drink-ingred-recipe-list {
+  margin-left: 200px;
+  font-size: 16px;
+  width: 350px;
+}
+
+.drink-ingred-recipe li {
+  font-size: 16px;
+  width: 230px;
+}
+
+.drink-ingred-recipe {
+  color: #ffb300;
+  display: flex;
+  background-color: rgba(213, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  margin-top: 5px;
 }

@@ -5,7 +5,7 @@ import SearchIngredient from "./SearchIngredient";
 class SearchContainer extends Component {
   render() {
     return (
-      <div>
+      <div class="list-container">
         <SearchName />
 
         <SearchIngredient />

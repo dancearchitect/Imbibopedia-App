@@ -37,7 +37,11 @@ class RandomizeDrink extends Component {
       return (
         <div className="random-drink">
           <li key={drink.idDrink}>{drink.strDrink}</li>
-          <img src={drink.strDrinkThumb} alt="cocktail" />
+          <img
+            src={drink.strDrinkThumb}
+            alt="cocktail"
+            className="drink-images"
+          />
           <ul className="random-ingredient-list">
             <li>
               {drink.strMeasure1} {drink.strIngredient1}
