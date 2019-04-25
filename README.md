@@ -41,7 +41,7 @@ Each cocktail will display name, image, description, ingredients and recipe inst
 <h4>Main Site</h4>
 https://www.thecocktaildb.com/api.php
 <h4>Implemented APIs</h4>
-*Disclaimer: I have a personal API key, these are the free default APIS.*
+*Disclaimer: I have a personal API key, these are the free default API.*
 https://www.thecocktaildb.com/api/json/v1/1/random.php<br />
 https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic<br />
 https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic<br />
