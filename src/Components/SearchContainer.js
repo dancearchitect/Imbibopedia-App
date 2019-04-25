@@ -7,7 +7,6 @@ class SearchContainer extends Component {
     return (
       <div class="list-container">
         <SearchName />
-
         <SearchIngredient />
       </div>
     );
