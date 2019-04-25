@@ -41,9 +41,11 @@ Each cocktail will display name, image, description, ingredients and recipe inst
 <h4>Main Site</h4>
 https://www.thecocktaildb.com/api.php
 <h4>Implemented APIs</h4>
-https://www.thecocktaildb.com/api/json/v2/8673533/random.php<br />
-https://www.thecocktaildb.com/api/json/v2/8673533/filter.php?a=Alcoholic<br />
-https://www.thecocktaildb.com/api/json/v2/8673533/filter.php?a=Non_Alcoholic<br />
-https://www.thecocktaildb.com/api/json/v2/8673533/search.php?s=DRINK_NAME<br />
-https://www.thecocktaildb.com/api/json/v2/8673533/lookup.php?i=DRINK_ID<br />
-https://www.thecocktaildb.com/api/json/v2/8673533/filter.php?i=INGREDIENTS<br />
+_Disclaimer: I have a personal API key, these are the free default APIS._
+https://www.thecocktaildb.com/api/json/v1/1/random.php<br />
+https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic<br />
+https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic<br />
+https://www.thecocktaildb.com/api/json/v1/1/search.php?s=DRINK_NAME<br />
+https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=DRINK_ID<br />
+_Disclaimer: the multi ingredient search only works for Cocktail DB Patreon supporters._
+https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=INGREDIENTS<br />
