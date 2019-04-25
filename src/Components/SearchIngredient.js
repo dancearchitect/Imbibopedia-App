@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import DrinkRecipe from "./DrinkRecipe";
 import DrinkIngredSearchResults from "./DrinkIngredSearchResults";
 
 class SearchIngredient extends Component {
