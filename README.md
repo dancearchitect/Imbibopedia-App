@@ -1,4 +1,5 @@
 <h1>Imbibopedia</h1>
+https://imbibopedia.herokuapp.com/
 
 My app is going to be a cocktail encyclopedia with recipes.<br /> 
 There will also be a randomize link and button to render a random cocktail.<br />
@@ -18,14 +19,19 @@ https://wireframe.cc/G1kJAW
 
 
 <h3>Components</h3>
-- -Home<br />
-- -RandomizeDrink<br />
-- -Alcoholic<br />
-- -NonAlcoholic<br />
-- -DrinkRecipe<br />
-- -SearchContainer<br />
-- -SearchName<br />
-- -SearchIngredient<br />
+1.Home<br/>
+  - Search Container<br/>
+    - Search Name<br/>
+     - Drink Name Search Result<br/>
+    - Search Ingredient<br/>
+     - Drink Ingredient Search Result<br/>
+2.Alcoholic<br/>
+  - Drink Recipe</br>
+3.NonAlcoholic<br/>
+  - Drink Recipe<br/>
+4.Randomize Drink<br/>
+
+
 
 <h3>MVP</h3>
 Users will be able to filter by name, multiple ingredients, alcoholic and non-alcoholic drinks.<br />
