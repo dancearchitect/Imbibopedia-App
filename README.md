@@ -21,10 +21,10 @@ https://wireframe.cc/G1kJAW
 <h3>Components</h3>
 1.Home<br/>
   - Search Container<br/>
-    - Search Name<br/>
-     - Drink Name Search Result<br/>
-    - Search Ingredient<br/>
-     - Drink Ingredient Search Result<br/>
+    -- Search Name<br/>
+     --- Drink Name Search Result<br/>
+    -- Search Ingredient<br/>
+     --- Drink Ingredient Search Result<br/>
 2.Alcoholic<br/>
   - Drink Recipe</br>
 3.NonAlcoholic<br/>
