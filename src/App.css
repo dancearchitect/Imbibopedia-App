@@ -79,6 +79,11 @@ p {
   background-color: rgba(76, 137, 250, 0.7);
 }
 
+.back-button:hover {
+  background-color: rgba(193, 88, 220, 0.7);
+  cursor: crosshair;
+}
+
 button.back-button {
   font-family: "Allerta Stencil", sans-serif;
   font-size: 18px;
@@ -97,6 +102,11 @@ button.back-button {
   border: none;
   border-radius: 10px;
   background-color: rgba(76, 137, 250, 0.7);
+}
+
+.random-button:hover {
+  background-color: rgba(193, 88, 220, 0.7);
+  cursor: crosshair;
 }
 
 button.random-button {
