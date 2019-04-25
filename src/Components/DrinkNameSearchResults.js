@@ -67,11 +67,7 @@ class DrinkNameSearchResults extends Component {
   };
 
   render() {
-    return (
-      <div>
-        {this.showRecipe()}
-      </div>
-    );
+    return <div>{this.showRecipe()}</div>;
   }
 }
 
